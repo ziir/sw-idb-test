@@ -1,7 +1,7 @@
 (() => {
   if ('serviceWorker' in window.navigator && window.indexedDB) {
     window.navigator.serviceWorker.register(
-      '/service-worker.js',
+      '/domain/service-worker.js',
     )
     .then((registration) => {
       console.log('serviceWorker is registered', registration);
